@@ -18,7 +18,7 @@ const ChatInterface = ({ setPage }) => {
 
         // Fetch response from backend (assuming you've set up the /ask endpoint as described before)
         try {
-            const { data } = await axios.post('http://localhost:3000/ask', {
+            const { data } = await axios.post('https://web-app-backend-c4x4.onrender.com/ask', {
             message: input,
             messages: messages
         });

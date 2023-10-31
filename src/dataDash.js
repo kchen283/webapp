@@ -12,7 +12,7 @@ function DataDash( {setPage} ) {
 
 
     useEffect(() => {
-        axios.get('http://localhost:3000/patients')
+        axios.get('https://web-app-backend-c4x4.onrender.com/patients')
             .then(response => {
                 setData(response.data);
             })

@@ -73,7 +73,7 @@ function Checkin({ setPage }) {
 
     const handleSubmit = async () => {
         try {
-            const response = await axios.post('http://localhost:3000/checkin', {
+            const response = await axios.post('https://web-app-backend-c4x4.onrender.com/checkin', {
                 state: state,
                 date: new Date(), // assuming you want to save the current date
                 feeling: feeling,

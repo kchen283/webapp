@@ -37,7 +37,7 @@ function Login(props) {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const endpoint = isSignup ? 'http://localhost:3000/signup' : 'http://localhost:3000/login';
+        const endpoint = isSignup ? 'https://web-app-backend-c4x4.onrender.com/signup' : 'https://web-app-backend-c4x4.onrender.com/login';
         console.log("Form submitted");
         history('/home'); // Replace '/main' with the actual route to your main page
 
